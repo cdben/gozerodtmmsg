@@ -1,0 +1,9 @@
+Name: Trans
+Host: 0.0.0.0
+Port: 8888
+
+TransRpc:
+  Etcd:
+    Hosts:
+      - 172.16.115.50:2379
+    Key: trans.rpc

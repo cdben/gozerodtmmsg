@@ -1,0 +1,18 @@
+type (
+
+	// 订单创建
+	TransRequest {
+		Amount   int64 `json:"amount"`
+		UserId   int64 `json:"userId"`
+		ToUserId int64 `json:"toUserId"`
+	}
+
+	TransResponse {
+		Id int64 `json:"id"`
+	}
+)
+
+service Trans {
+	@handler Trans
+	post /api/trans(TransRequest) returns (TransResponse)
+}
